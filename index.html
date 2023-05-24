@@ -1,13 +1,76 @@
-<!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>OkayKangal.Com</title>
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile-info {
+            margin-left: 20px;
+        }
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-bio {
+            font-size: 18px;
+            color: #666666;
+        }
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .social-link:hover {
+            opacity: 0.8;
+        }
+        .github {
+            background-image: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
+        }
+        .twitter {
+            background-image: url("https://cdn-icons-png.flaticon.com/512/733/733579.png");
+        }
+        .instagram {
+            background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
+        }
+    </style>
 </head>
-<body style="font-family: monospace">
-
-<div> 11000100 10110000 01101110 01100001 01101110 01101101 01100001 01101011 00100000 01100100 01100101 11000100 10011111 01101001 01101100 00100000 01100001 01101110 01101100 01100001 01101101 01100001 01101011 00100000 01101001 01110011 01110100 01101001 01111001 01101111 01110010 01110101 0110110 </div> 
-
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://picsum.photos/150" alt="Profile image" class="profile-image">
+            <div class="profile-info">
+                <div class="profile-name">Adınız Soyadınız</div>
+                <div class="profile-bio">Kendiniz hakkında kısa bir tanıtım yazısı.</div>
+                <div class="social-links">
+                    <a href="https://github.com/kullanici-adi" target="_blank" class="social-link github"></a>
+                    <a href="https://twitter.com/kullanici-adi" target="_blank" class="social-link twitter"></a>
+                    <a href="https://instagram.com/kullanici-adi" target="_blank" class="social-link instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
